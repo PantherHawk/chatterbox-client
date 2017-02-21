@@ -31,17 +31,17 @@ app.send = function(message) {
 
 app.fetch = function() {
   //app.fetchRequestStatus =
-    $.ajax({
-      url: app.server,
-      type: 'GET',
-      success: function(data) {
-        console.log(data);
-        app.messages = data.results;
-      },
-      error: function(data) {
-        console.log(data);
-      }
-    });
+  $.ajax({
+    url: app.server,
+    type: 'GET',
+    success: function(data) {
+      console.log(data);
+      app.messages = data.results;
+    },
+    error: function(data) {
+      console.log(data);
+    }
+  });
 };
 
 app.clearMessages = function() {
