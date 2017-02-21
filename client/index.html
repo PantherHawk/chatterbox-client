@@ -28,10 +28,17 @@
     <div id="main">
       <h1>chatterbox</h1>
       <!-- Your HTML goes here! -->
-      <!-- pick a chat room -->
-      <select name="roomname">
-        <option value=""></option>
-      </select>
+      <div>
+        <select name="roomname" id="roomSelect">
+          <option value="">New Room...</option>
+        </select>
+      </div>
+      <form>
+        <div>
+          <input type="text" name="newMessage" />
+          <input type="submit" name="submitMessage" value="Submit"/>
+        </div>
+      </form>
     </div>
     <div id="chats"></div>
   </body>
