@@ -34,3 +34,7 @@ app.fetch = function() {
     }
   });
 };
+
+app.clearMessages = function() {
+
+};
