@@ -33,10 +33,14 @@
           <option value="">New Room...</option>
         </select>
       </div>
-      <form>
+      <form id="send">
         <div>
-          <input type="text" name="newMessage" />
-          <input type="submit" name="submitMessage" value="Submit"/>
+          <input type="text" name="message" id="message" />
+          <input type="submit" name="submitMessage" value="Submit" class="submit"/>
+        </div>
+        <div>
+          <br>
+          <input type="submit" name="submitNewRoom" value="Create New Room" class="submit" id="createNewRoomBtn"/>
         </div>
       </form>
     </div>
